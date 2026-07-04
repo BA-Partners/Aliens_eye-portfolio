@@ -34,8 +34,20 @@ Keyboard-driven router port-forward flow, router audits, and manual mapping chec
 
 ## Portfolio and proof
 
-Live portfolio: http://tourmaline-pie-a6e32b.netlify.app  
-Password: `My-Drop-Site`
+- GitHub Pages: https://ba-partners.github.io/Aliens_eye-portfolio/
+- GitHub repo: https://github.com/BA-Partners/Aliens_eye-portfolio
+- Netlify Drop: http://tourmaline-pie-a6e32b.netlify.app
+- Netlify password: `My-Drop-Site`
+
+## Fiverr / outreach assets
+
+- `fiverr_buyer_request_variants.md` — 5 buyer-request replies ready to paste
+- `fiverr_gig_page.md` — full gig description + faq + search tags
+- `first_month_funnel.md` — month-1 traffic, conversion, and orders target
+
+## Gateway drip copy
+
+Use the portfolio links above in Buyer Requests, Twitter/X posts, Telegram/Discord groups, and cold outreach. Lead with proof, then route to this repo or the live site for validation.
 
 ## Safety and policy
 
