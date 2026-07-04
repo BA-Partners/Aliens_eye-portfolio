@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Automation Services | Portfolio</title>
+<style>
+  :root { --bg:#0b0f16; --panel:#121826; --ink:#e8ecf1; --muted:#8b93a3; --accent:#00e5a0; --border:#1e2736; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:ui-system-ui,Segoe UI,Roboto,Inter,sans-serif; line-height:1.65; }
+  .wrap { max-width:1060px; margin:0 auto; padding:24px; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:24px 0 48px; }
+  header .brand { display:flex; align-items:center; gap:14px; }
+  header .badge { background:linear-gradient(90deg,#00c48c,#00e5a0); color:#182018; padding:4px 10px; border-radius:999px; font-weight:700; font-size:12px; }
+  header .links a { color:var(--ink); text-decoration:none; margin-left:16px; font-weight:600; }
+  .hero { background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:32px; margin-bottom:32px; }
+  .hero h1 { font-size:28px; margin:0 0 10px; letter-spacing:.2px; }
+  .hero p { color:var(--muted); margin:0; }
+  .section { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin:28px 0; }
+  @media (max-width:860px){ .section{ grid-template-columns:1fr; } header { flex-wrap:wrap;} }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:22px; }
+  .card .tag { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.3px; background:#11261e; color:var(--accent); padding:3px 8px; border-radius:999px; margin:0 0 8px; }
+  .card h3 { margin:6px 0 8px; font-size:18px; }
+  .card p { color:var(--muted); margin:0; font-size:14px; }
+  .list { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin:28px 0; }
+  .item { display:flex; gap:12px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px; }
+  .num { width:28px; height:28px; border-radius:8px; background:#11261e; color:var(--accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; }
+  .item h4 { margin:0 0 6px; font-size:14px; }
+  .item p { margin:0; font-size:13px; color:var(--muted); }
+  .cta { display:flex; align-items:center; justify-content:space-between; background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:20px 22px; }
+  .cta .big { font-size:22px; font-weight:700; }
+  .pill { background:linear-gradient(90deg,#00c48c,#00e5a0); color:#182018; border:none; padding:10px 16px; border-radius:10px; font-weight:800; cursor:pointer; }
+  footer { color:var(--muted); font-size:12px; margin:40px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="badge">AUTOMATION</div>
+      <div>
+        <div style="font-weight:800">Automation Services</div>
+        <div style="color:var(--muted);font-size:12px">Portable scripts, deployments, diagnostics</div>
+      </div>
+    </div>
+    <div class="links">
+      <a href="mailto:info@hsjpatners.com">Email</a>
+      <a href="https://github.com/arxhr007">GitHub</a>
+      <a href="https://t.me/atao66666666">Telegram</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>I build reliable automation scripts and local-model tooling.</h1>
+    <p>Focus: port-forward verification, node health probes, LAN/router diagnostics, automation toolchains.</p>
+  </div>
+
+  <div class="section" id="services">
+    <div class="card">
+      <span class="tag">Type:A</span>
+      <h3>Port Verification Automation</h3>
+      <p>TCP + HTTP probes with retries, backoff, and router discovery. No secrets stored; safe CLI tooling.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Type:B</span>
+      <h3>Node Health Monitoring</h3>
+      <p>Low-resource monitor with HTTP/TCP checks, timeout tuning, and stable local integration.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Env:macOS</span>
+      <h3>Local LLM Deployment</h3>
+      <p>llama.cpp serving, Metal tuning, scripted automation around your hardware limits.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Network</span>
+      <h3>Router / NAT Diagnostics</h3>
+      <p>UPnP/NAT-PMP checks, manual port-forward flow automation, firmware behavior audits.</p>
+    </div>
+  </div>
+
+  <div class="section" id="work">
+    <div class="card" style="grid-column:1/-1">
+      <span class="tag">Shipped</span>
+      <h3 style="margin-top:8px">Automation portfolio highlights</h3>
+      <div class="list">
+        <div class="item">
+          <div class="num">A1</div>
+          <div>
+            <h4>router_port_verify.py</h4>
+            <p>CLI port-forward verifier: TCP + HTTP checks with retries.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="num">A2</div>
+          <div>
+            <h4>tron_grpc_compat_preflight.py</h4>
+            <p>Offline TLV/gRPC readiness tests, deterministic pass/fail.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="num">A3</div>
+          <div>
+            <h4>tron_watchdog.js</h4>
+            <p>Minimal node health monitor with timeout/reconnect logic.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="num">A4</div>
+          <div>
+            <h4>Automated port-forward flow</h4>
+            <p>Workshop-grade control for non-UPnP router environments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="card">
+      <h3>Skill set</h3>
+      <p>Python · Shell/Docker · llama.cpp · UPnP/NAT-PMP · Node.js · automation testing</p>
+    </div>
+    <div class="card">
+      <h3>Deliverables</h3>
+      <p>CLI tools, runbooks, monitor setup, deployment scripts, repo-ready commits</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <div class="big">Need an automation script?</div>
+      <div style="color:var(--muted);margin-top:4px">Typical delivery: 24-72h for scoped scripts.</div>
+    </div>
+    <button class="pill" onclick="prompt('Send me your message; I will follow up.')">Send inquiry</button>
+  </div>
+
+  <footer>All credentials in projects are placeholders. No secrets are embedded in demonstration materials.</footer>
+</div>
+</body>
+</html>

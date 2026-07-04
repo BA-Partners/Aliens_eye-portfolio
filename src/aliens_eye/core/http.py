@@ -97,17 +97,21 @@ async def fetch_url(
                 )
         except asyncio.TimeoutError:
             error_message = "timeout"
+            error_kind = "timeout"
             last_status = 408
         except aiohttp.ClientResponseError as exc:
             error_message = str(exc)
+            error_kind = "retryable_status"
             last_status = exc.status or last_status
             retry_after = _parse_retry_after(last_headers)
         except aiohttp.ClientError as exc:
             error_message = str(exc)
+            error_kind = "client_error"
         except Exception as exc:
             error_message = str(exc)
+            error_kind = "unexpected"
 
-        if attempt < config.retries:
+        if attempt < config.retries and error_kind in {"timeout", "retryable_status", "client_error"}:
             backoff = min(config.backoff_base * (2 ** attempt), config.backoff_cap)
             backoff += random.uniform(0.0, config.jitter)
             if retry_after:

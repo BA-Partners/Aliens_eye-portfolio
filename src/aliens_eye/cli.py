@@ -41,7 +41,7 @@ def display_banner(site_count: int) -> None:
         .-~  [green] ([red]oo[green]) [magenta] ([red]oo[magenta])    [yellow]~-.
        (_____[green]//~~\\[magenta]_//~~\\[yellow]______)       [magenta]☆[yellow]
   _.-~`                         `~-._
- /[magenta]O[blue]=[green]O[red]=[yellow]O[white]=[magenta]O[blue]=[green]O[red]=[yellow]O[white]=[green]O[red]=[yellow]=[green]O[red]=[yellow]O[white]O[white]=[magenta]O[blue]=[green]O[red]=[green]O[red]=[yellow]O[white]=[yellow]O[white]=[magenta]O[blue]=[green]O[red]=[yellow]O[yellow]\     [white]✴
+                                                          # noqa: E501
 [yellow] \___________________________________/
             \x [white]x[yellow] x [white]x[yellow] x [white]x[yellow] x/    [blue]✫[yellow]
     .  [white]*[yellow]     \\[white]x[yellow]_[white]x[yellow]_[white]x[yellow]_[white]x[yellow]_[white]x[yellow]_[white]x[yellow]/
