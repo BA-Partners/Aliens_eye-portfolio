@@ -1,59 +1,46 @@
 # Aliens_eye — Automation Services + Tooling
 
-## Available for hire: automation scripts and local node tooling
-
 I ship portable automation, verification, and deployment artifacts for engineering workflows.
 
-- **Type A:** $80-$220 fixed — scoped script + README + runbook
-- **Type B:** $40-$90/hr — integration, tuning, and support
+## Services
 
-Response time: usually within hours. Typical delivery: 24-72h for scoped scripts.
+### Scoped automation script
+One concrete script, README, and runbook. Typical scope: port-forward verifier, node health monitor, local LLM startup/tuning script, or router diagnostics.
 
----
+### Integration + support
+Ongoing tuning, monitoring, or Docker/PM2 packaging for an existing artifact.
 
-## What I deliver
+## Pricing
 
-### 1. Port-forward verifier
-TCP + HTTP probes with retries, backoff, UPnP/NAT-PMP checks, and router discovery.
+- Type A: fixed $80-$220, 1 scoped script, 24-72h
+- Type B: $40-$90/hr, integration, tuning, and support
 
-### 2. Node health monitor
-Lightweight monitor with container-reset tolerance, timeout tuning, and cleanup logic.
+## Deliverables
 
-### 3. Local LLM deploy helper
-Startup scripts and Metal tuning for `llama.cpp` on Apple Silicon.
+- CLI or service artifact
+- README with install and run steps
+- retry/timeout defaults and runbook
+- 7-day follow-up window
 
-### 4. Router diagnostics
-Keyboard-driven router port-forward flow, router audits, and manual mapping checklists.
-
-## Working deliverables
+## Proof
 
 - `router_port_verify.py` — TCP/HTTP verifier with retries
-- `tron_grpc_compat_preflight.py` — offline gRPC/TLV tests
-- `tron_watchdog.js` — node monitor with timeout/reconnect logic
+- `tron_grpc_compat_preflight.py` — offline gRPC/TLV readiness tests
+- `tron_watchdog.js` — lightweight node monitor
 - `tplink_portforward_guide.md` — router port-forward flow guide
 
-## Portfolio and proof
+## Portfolio links
 
-- GitHub Pages: https://ba-partners.github.io/Aliens_eye-portfolio/
 - GitHub repo: https://github.com/BA-Partners/Aliens_eye-portfolio
 - Netlify Drop: http://tourmaline-pie-a6e32b.netlify.app
-- Netlify password: `My-Drop-Site`
+- GitHub Pages: https://ba-partners.github.io/Aliens_eye-portfolio/
 
-## Fiverr / outreach assets
+## Outreach assets
 
-- `fiverr_buyer_request_variants.md` — 5 buyer-request replies ready to paste
-- `fiverr_gig_page.md` — full gig description + faq + search tags
-- `first_month_funnel.md` — month-1 traffic, conversion, and orders target
-
-## Gateway drip copy
-
-Use the portfolio links above in Buyer Requests, Twitter/X posts, Telegram/Discord groups, and cold outreach. Lead with proof, then route to this repo or the live site for validation.
-
-## Safety and policy
-
-- No secrets stored in repos
-- No browser UI scraping or password entry
-- Credentials are referenced by placeholders only
+- `fiverr_gig_type_a.md` — fixed-price gig copy
+- `fiverr_gig_type_b.md` — hourly gig copy
+- `fiverr_buyer_request_variants.md` — buyer-request replies
+- `first_month_funnel.md` — month-1 traffic, conversion, orders target
 
 ## Contact
 
@@ -61,11 +48,17 @@ Use the portfolio links above in Buyer Requests, Twitter/X posts, Telegram/Disco
 - Telegram: @atao66666666
 - GitHub: https://github.com/arxhr007
 
+## Policy
+
+- No secrets or credentials stored in repos
+- No browser UI scraping or password entry
+- Credentials are referenced by placeholders only
+
 ---
 
 # Aliens Eye (OSINT tooling)
 
-This repo also contains the Aliens Eye username scanner.
+This repo also contains the Aliens Eye username scanner under a separate track.
 
 ## Highlights
 
