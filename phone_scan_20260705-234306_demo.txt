@@ -1,0 +1,3 @@
+[CN] +861068373987 | unknown | valid=1 | carrier=
+[CN] +8613923992837 | mobile | valid=1 | carrier=
+[CN] +8613800138000 | mobile | valid=1 | carrier=

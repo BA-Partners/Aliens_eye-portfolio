@@ -10,7 +10,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Iterable, List
 
-from aliens_eye.phone_scanner import scan_numbers
+_HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(_HERE / "src"))
+from aliens_eye.phone_scanner import scan_numbers  # noqa: E402
+del sys.path[0]
 
 
 def parse_args(argv: List[str] | None = None) -> argparse.Namespace:
